@@ -4,7 +4,7 @@ export const connectStreamSocket = (camera, onFrame) => {
     return null;
   }
 
-  const ws = new WebSocket(`ws://ppbnmtxzxafku2-8000.proxy.runpod.net/ws/stream/${camera.id}`);
+  const ws = new WebSocket(`wss://ppbnmtxzxafku2-8000.proxy.runpod.net/ws/stream/${camera.id}`);
 
   const handleOpen = () => {
     console.log('WebSocket connected');
